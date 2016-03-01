@@ -1,0 +1,15 @@
+  <div class="row" ng-cloak>
+    <div ng-repeat="request in requests">
+      <div class="col s12">
+        <ul class="collection">
+            <request request="request"></request>
+        </u>
+      </div>
+    </div>
+
+    <div ng-hide="requests && requests.length">
+      <div class="col s12 no-posts-here">
+        <em>The are no posts here.</em>
+      </div>
+    </div>
+  </div>

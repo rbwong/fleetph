@@ -1,0 +1,79 @@
+<div ng-include src="'/static/templates/layout/navbar-transparent.html'"></div>
+
+<div class="page-header" style="background-image:url(https://a2.muscache.com/ic/discover/376);">
+  <div class="container">
+    <h2 class="center">Fleet.ph</h2>
+    <p class="center">Waiting for your ride sucks.</p>
+    <div class="center"><a href="#learn-more" class="waves-effect waves-light black btn center semi-transparent">Learn More</a></div>
+  </div>
+</div>
+
+<div class="search-header semi-transparent black" data-ng-show="vm.isAuthenticated">
+    <form class="col s12 container">
+      <div class="row">
+        <div class="input-field col s6">
+          <a href="/requests/new" 
+          	 class="waves-effect waves-light  btn indigo right solid-color"
+          	 >Request a ride</a>
+        </div>
+        <div class="input-field col s6">
+          <a href="/trips" class="waves-effect waves-light  btn indigo solid-color">View rides</a>
+        </div>
+      </div>
+  	</form>
+</div>
+
+<section id="learn-more" class="container">
+	<div class="section">
+
+	  <!--   Icon Section   -->
+	  <div class="row">
+	    <div class="col s12 m4">
+	      <div class="icon-block">
+	        <h2 class="center light-blue-text"><i class="mdi-maps-directions-bus"></i></h2>
+	        <h5 class="center">Get there faster</h5>
+
+	        <p class="light">Because Fleet.ph crowdsources requests to public transport operators, we make sure that your bus, jeep, or van gets there faster than it would if it waits a whole period in the terminal.</p>
+	      </div>
+	    </div>
+
+	    <div class="col s12 m4">
+	      <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="mdi-action-alarm-on"></i></h2>
+	        <h5 class="center">Own your time</h5>
+
+	        <p class="light">Fleet.ph lets you know exactly when your ride will arrive. And because you see where your ride is on the map, you won't ever be unsure of when you'll board or if you will.</p>
+	      </div>
+	    </div>
+
+	    <div class="col s12 m4">
+	      <div class="icon-block">
+	        <h2 class="center light-blue-text"><i class="mdi-social-people"></i></h2>
+	        <h5 class="center">Empower the crowd</h5>
+
+	        <p class="light">Since Fleet.ph crowdsources requests, you are powered by numbers. The more the merrier. Literally. More requests from a single pick-up point ensures that more bus operators are compelled to get there first, and get there fast.</p>
+	      </div>
+	    </div>
+	  </div>
+
+	</div>
+	<br><br>
+
+	<div class="section">
+		<div class="row">
+		<h2>Purely open-source technology</h2>
+		<p>We believe that quality services need not be costly. Fleet.ph is built from the ground up with the latest in FOSS, leveraging new technologies to power our result-driven platform.</p>
+		</div>
+		<div class="row">
+			<img class="col s4 m4" src="static/images/django.png"/>
+			<img class="col s4 m4" src="static/images/django-rest.gif"/>
+			<img class="col s4 m4" src="static/images/angular.jpg"/>
+			<img class="col s4 m4" src="static/images/bower.png"/>
+			<img class="col s4 m4" src="static/images/sqlite.png"/>
+			<img class="col s4 m4" src="static/images/redis.png"/>
+		</div>
+	</div>
+</section id="learn-more">
+
+<a href="/trips/new" class="btn-floating btn-large waves-effect waves-light indigo darken-4 btn-add-new-post"><i class="mdi-content-add"></i></a>
+<footer ng-include src="'/static/templates/layout/footer.html'" class="page-footer indigo darken-3"></footer>

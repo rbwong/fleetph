@@ -1,0 +1,125 @@
+/**
+ * Colors;
+ *
+ * Made By Ryan Wong
+ */
+.semi-transparent {
+    opacity: .6;
+}
+
+.solid-color {
+    opacity: 1 !important;
+    z-index: 99;
+}
+
+/**
+ * Navbars;
+ *
+ * Made By Ryan Wong
+ */
+
+.nav-transparent{
+  	padding: 0 20px;
+	background: transparent;
+	border-bottom: none;
+	box-shadow: none;
+	z-index: 1000;
+	top: 20px;
+	width: 100%;
+	position: absolute;
+}
+
+/**
+ * Navbar: avatar;
+ *
+ * Made By Ryan Wong
+ */
+
+
+.avatar {
+	line-height: 0px;
+}
+
+.avatar img {
+	border: 1px solid white;
+	margin: 12px 0;
+	width: 40px;
+	height: 40px;
+}
+
+/**
+ * Generic:header;
+ *
+ * Made By Ryan Wong
+ */
+
+.page-header {
+  margin-top: 0;
+  min-height: 400px;
+  background-size: cover;
+  background-position: 0% 80%;
+  color: white;
+}
+
+.page-header .container {
+  padding: 150px;
+}
+
+.page-header h2 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.page-header p {
+  font-weight: 600;
+  margin: 20px; 0
+}
+
+.page-header .btn {
+
+  	margin: 30px 0;
+}
+
+.page-content {
+	margin-bottom: 0;
+}
+
+
+/**
+ * Index: header;
+ *
+ * Made By Ryan Wong
+ */
+
+.search-header {
+	margin-top: -90px;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.search {
+	margin-top: 30px;
+}
+
+/**
+ * Generic: Page-title;
+ *
+ * Made By Ryan Wong
+ */
+
+.page-title {
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
+
+
+/**
+ * Generic: add button;
+ *
+ * Made By Ryan Wong
+ */
+.btn-add-new-post {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

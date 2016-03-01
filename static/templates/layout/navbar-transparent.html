@@ -1,0 +1,45 @@
+<ul id="dropdown-user" class="dropdown-content">
+  <li><a ng-href="/{{ vm.user.username }}">Profile </a></li>
+  <li><a href="javascript:void(0)"
+        data-ng-show="vm.isAuthenticated"
+        ng-click="vm.logout()">Logout</a></li>
+</ul>
+<ul id="dropdown-etc" class="dropdown-content">
+  <li><a nhref="/about">About</a></li>
+  <li><a nhref="/faq">FAQ</a></li>
+</ul>
+
+<nav class="nav nav-transparent" role="navigation" ng-controller="NavbarController as vm">
+  <div class="nav-wrapper">
+    <a id="logo-container" href="/" class="brand-logo">Fleet.ph</a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button-etc" href="#!" data-activates="dropdown-etc">
+                <i class="mdi-hardware-keyboard-control"></i></a></li>
+        <li class="avatar"><a class="dropdown-button" href="#!" data-activates="dropdown-user"
+                data-ng-show="vm.isAuthenticated">
+                <img ng-src="{{ vm.user.profile.picture }}" alt="" class="circle responsive-img">
+                </a></li>
+        <li><a  href="javascript:void(0)"
+                data-ng-show="!vm.isAuthenticated"
+                ng-click="vm.login()">Login</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+        <li><a ng-href="/{% verbatim %}{{ vm.user.username }}{% endverbatim %}">Profile </a></li>
+        <li><a nhref="/about">About</a></li>
+         <li><a nhref="/faq">FAQ</a></li>
+        <li><a href="javascript:void(0)"
+                data-ng-show="vm.isAuthenticated"
+                ng-click="vm.logout()">Logout</a></li>
+        <li><a  href="javascript:void(0)"
+                data-ng-show="!vm.isAuthenticated"
+                ng-click="vm.login()">Login</a></li>
+    </ul>
+  </div>
+</nav>
+<script type="text/javascript">
+  $(".button-collapse").sideNav();
+  $(".dropdown-button").dropdown();
+  $(".dropdown-button-etc").dropdown();
+</script>

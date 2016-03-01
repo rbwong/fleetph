@@ -1,0 +1,8 @@
+<li class="collection-item avatar">
+	<a ng-href="/trips/{{trip.id}}">
+	<i class="mdi-maps-directions-bus circle green"></i>
+	<span class="title">#{{trip.id}}: {{trip.ship.body_text}} ({{trip.ship.plate_no}})</span>
+    <p>From: <b><reverse-geocode longlat="{{trip.origin}}"></reverse-geocode></b><br/>
+    To: <b><reverse-geocode longlat="{{trip.destination}}"></reverse-geocode></b></p>
+    </a>
+</li>
